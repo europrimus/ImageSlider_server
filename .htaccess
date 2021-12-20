@@ -2,9 +2,5 @@
 PassengerAppRoot "/home/europrimus/www/img.europrimus.ninja"
 PassengerBaseURI "/"
 PassengerPython "/home/europrimus/virtualenv/www/img.europrimus.ninja/3.9/bin/python3.9"
-PassengerAppLogFile "/home/europrimus/logs"
+PassengerAppLogFile "/home/europrimus/logs/img.europrimus.ninja-passenger.log"
 # DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION END
-# DO NOT REMOVE OR MODIFY. CLOUDLINUX ENV VARS CONFIGURATION BEGIN
-<IfModule Litespeed>
-</IfModule>
-# DO NOT REMOVE OR MODIFY. CLOUDLINUX ENV VARS CONFIGURATION END
