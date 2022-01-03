@@ -20,5 +20,8 @@ def application(environ, start_response):
             )
     jsonData = listImg.list(baseUrl)
     del logger
-    start_response('200 OK', [('Content-Type', 'application/json')])
+    start_response('200 OK', [
+        ('Content-Type', 'application/json'),
+        ('Access-Control-Allow-Origin', '*')
+        ])
     return [json.dumps(jsonData).encode()]
