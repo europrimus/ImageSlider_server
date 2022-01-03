@@ -1,4 +1,5 @@
 import os
+import mimetypes
 from Logger import Logger
 
 class ListImg(object):
@@ -14,10 +15,13 @@ class ListImg(object):
         images = []
         for (dirpath, dirnames, filenames) in os.walk(self.path):
             for filename in filenames:
-                data = {}
-                data['url'] = "{}/{}".format(prefix,filename)
-                data['file'] = filename
-                images.append(data)
+                (type, encoding) = mimetypes.guess_type("{}/{}".format(self.path,filename))
+                if type != None and type.split("/")[0] == "image":
+                    data = {}
+                    data['url'] = "{}/{}".format(prefix,filename)
+                    data['type'] = type
+                    images.append(data)
+
             break
         self.logger.debug("list : {}".format(images))
         return images
