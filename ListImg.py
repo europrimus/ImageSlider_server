@@ -14,6 +14,7 @@ class ListImg(object):
     def list(self, prefix = "/"):
         images = []
         for (dirpath, dirnames, filenames) in os.walk(self.path):
+            filenames.sort()
             for filename in filenames:
                 (type, encoding) = mimetypes.guess_type("{}/{}".format(self.path,filename))
                 if type != None and type.split("/")[0] == "image":
