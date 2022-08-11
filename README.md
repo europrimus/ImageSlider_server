@@ -5,7 +5,7 @@ Serve list of images in JSON format
 Configure a subdomain of your web server to use ```passenger_wsgi.py``` as startup file  
 Then add directory and images files in it
 
-### with ImageSlider_client
+### with [ImageSlider_client](https://github.com/europrimus/ImageSlider_client)
 directory structure example
 ```
 my_slide
