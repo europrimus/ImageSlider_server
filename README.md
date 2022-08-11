@@ -7,3 +7,6 @@ Than add directory and images files in it
 
 ## See in action
 http://img.europrimus.ninja/cv/knowledge
+
+## Licence
+Sources under the [CeCILL](http://www.cecill.info/index.fr.html) licence V2.1
